@@ -108,18 +108,18 @@ function M:manage_spinner()
 end
 
 -- Get appropriate status icon and highlight
-function M:get_status_display()
-    local tower = "󰐻"
-    return tower, M.is_connected() and "DiagnosticInfo" or M.is_connecting() and "DiagnosticWarn" or "DiagnosticError"
-end
+-- function M:get_status_display()
+--     local tower = "󰐻"
+--     return tower, M.is_connected() and "DiagnosticInfo" or M.is_connecting() and "DiagnosticWarn" or "DiagnosticError"
+-- end
 
 -- Format with highlight
-function M:format_hl(text, hl)
-    if hl then
-        return string.format("%%#%s#%s%%*", hl, text)
-    end
-    return text
-end
+-- function M:format_hl(text, hl)
+--     if hl then
+--         return string.format("%%#%s#%s%%*", hl, text)
+--     end
+--     return text
+-- end
 
 -- Update function that lualine calls
 function M:update_status()
